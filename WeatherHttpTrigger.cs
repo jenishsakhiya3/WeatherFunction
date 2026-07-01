@@ -13,6 +13,7 @@ public class WeatherHttpTrigger
     {
         _logger = logger;
     }
+    
 
     [Function("WeatherHttpTrigger")]
     public IActionResult Run([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req)
